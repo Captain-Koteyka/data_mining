@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 import pandas as pd
 
-profession = 'художник'
+profession = 'кузнец'
 main_link = 'https://hh.ru/search/vacancy'
 params = {'L_save_area': 'true',
           'clusters': 'true',
@@ -62,5 +62,5 @@ while True:
     else:
         break
 
-df = pd.DataFrame(all_vacancies)
+#df = pd.DataFrame(all_vacancies)
 print(df)
